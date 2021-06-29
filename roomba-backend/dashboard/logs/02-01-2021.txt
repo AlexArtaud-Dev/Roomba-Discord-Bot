@@ -1,0 +1,8 @@
+Log of 02-01-2021
+*****************
+{"date":02/01/2021 à 18:23:11,"guild":Projet POO-COO-IHM,"userID":259741670323650571,"username":|Alex|,"command":join,"channelID":788742312737112108,"channelName":🎙 Vocal 1🎙,"result":"Success : Bot Joined!"}
+{"date":02/01/2021 à 18:36:23,"guild":Projet POO-COO-IHM,"userID":259741670323650571,"username":|Alex|,"command":play,"method":"YT SEARCH","channelID":788742312737112108,"channelName":🎙 Vocal 1🎙,"track":IC3PEAK - Смерти Больше Нет,"result":"Success : Track Added!"}
+{"date":02/01/2021 à 18:36:54,"guild":Projet POO-COO-IHM,"userID":259741670323650571,"username":|Alex|,"command":leave,"channelID":788742312737112108,"channelName":🎙 Vocal 1🎙"result":"Success : Bot Left!"}
+{"date":02/01/2021 à 21:29:45,"guild":【アークライト作戦】,"userID":259741670323650571,"username":|Alex|,"command":play,"method":"YT SEARCH","channelID":718800970993106954,"channelName":✴ 楽園の扉 ✴,"track":Code Geass IN 13 MINUTES (ft. Frédéric Souterelle and Arnaud Laurent) - RE: TAKE,"result":"Success : Track Added!"}
+{"date":02/01/2021 à 21:29:49,"guild":【アークライト作戦】,"userID":259741670323650571,"username":|Alex|,"command":volume,"channelID":718800970993106954,"channelName":✴ 楽園の扉 ✴,"volumeSet":45,"result":"Success : Volume Set!"}
+{"date":02/01/2021 à 21:38:38,"guild":【アークライト作戦】,"userID":259741670323650571,"username":|Alex|,"command":leave,"channelID":718800970993106954,"channelName":✴ 楽園の扉 ✴"result":"Success : Bot Left!"}

@@ -1,0 +1,3 @@
+npm run lavalink
+pm2 start .\main.js
+./ngrok http 3000

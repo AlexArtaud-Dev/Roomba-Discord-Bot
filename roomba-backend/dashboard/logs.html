@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./bootstrap">
+    <link rel="stylesheet" href="./maincss">
+    <link rel="stylesheet" href="./nowui">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Roomba Website</title>
+    <style>
+        #textarea {
+            background-color: black;
+            box-shadow: 10px 5px 5px rgb(39, 38, 38)ck;
+            border-radius: 15px;
+            border: 0px;
+            color: #8161e2;
+            overflow-y: scroll;
+            height: 100px;
+            resize: none;
+        }
+    </style>
+
+</head>
+
+<body style="overflow: hidden;">
+
+    <nav class="navbar navbar-expand-lg bg-transparent">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="./menuIcon" width="20px" height="20px" style="max-width: none !important;">
+    </button>
+        <img class="rounded" src="./BotLogoPNG" width="50" height="50">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 20px !important">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link font-weight-bold" href="http://90.112.182.166:3000/api/main">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="/logs">Logs <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="./message">Raw-Logs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="http://90.112.182.166:3001/" target="_blank">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="./todo">TODO</a>
+                </li>
+            </ul>
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Documentation
+            </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./commands">Commands</a>
+                    <a class="dropdown-item" href="./agenda">Timetable IUT</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="https://github.com/Izoniks-prog">GitHub</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <div class="heading" style="padding-left: 5% !important;;padding-right: 5% !important;;padding-top: 0% !important;;padding-bottom: 19% !important;">
+        <h2 class="display-5 title" style="padding-top: 0;">Logs</h2>
+        <textarea readonly wrap="off" style="height: 475px !important;" id="textarea" class="shadow-lg w-100 p-3"></textarea>
+
+    </div>
+
+    <br /><br /><br /><br /><br /><br />
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="main/nowuijs"></script>
+    <script src="./app"></script>
+</body>
+
+</html>

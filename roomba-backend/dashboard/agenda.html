@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./bootstrap">
+    <link rel="stylesheet" href="./maincss">
+    <link rel="stylesheet" href="./nowui">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Roomba Website</title>
+    <style>
+        .heading {
+            background-image: none !important;
+        }
+        
+        #open-web-calendar {
+            box-shadow: 10px 5px 5px rgb(39, 38, 38)ck;
+            border-radius: 15px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-transparent">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="./menuIcon" width="20px" height="20px" style="max-width: none !important;">
+    </button>
+        <img class="rounded" src="./BotLogoPNG" width="50" height="50">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 20px !important">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link font-weight-bold" href="http://90.112.182.166:3000/api/main">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="./logs">Logs <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="./message">Raw-Logs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="http://90.112.182.166:3001" target="_blank">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="./todo">TODO</a>
+                </li>
+            </ul>
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Documentation
+            </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./commands">Commands</a>
+                    <a class="dropdown-item" href="/agenda">Timetable IUT</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="https://github.com/Izoniks-prog">GitHub</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <div class="heading" style="padding-left: 5% !important;;padding-right: 5% !important;;padding-top: 0% !important;;padding-bottom: 30% !important;">
+        <h2 class="display-5 title" style="padding-top: 0;">Agenda IUT 2</h2>
+        <iframe id="open-web-calendar" style="background:url('https://raw.githubusercontent.com/niccokunzmann/open-web-calendar/master/static/img/loaders/circular-loader.gif') center center no-repeat;" src="https://open-web-calendar.herokuapp.com/calendar.html?url=https%3A%2F%2Fade-uga.grenet.fr%2Fjsp%2Fcustom%2Fmodules%2Fplannings%2Fanonymous_cal.jsp%3Fresources%3D41209%2C41208%26projectId%3D8%26calType%3Dical%26firstDate%3D2020-09-01%26lastDate%3D2021-02-10&amp;title=Calendrier%20S2D&amp;language=fr&amp;skin=dhtmlxscheduler.css&amp;css=%40media%20screen%20and%20(max-width%3A%20712px)%20%7B%0A.dhx_cal_navline%20.dhx_cal_date%7B%0Afont-size%3A%2013px%20!important%3B%0A%7D%0A%7D%0A%40media%20screen%20and%20(max-width%3A%20500px)%20%7B%0A.dhx_cal_navline%20.dhx_cal_date%7B%0Adisplay%3Anone%3B%0A%7D%0A%7D&amp;target=_blank"
+            sandbox="allow-scripts allow-same-origin allow-popups" allowTransparency="true" scrolling="no" frameborder="0" height="500px" width="100%"></iframe>
+
+    </div>
+
+    <br /><br /><br /><br /><br /><br />
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/now-ui-kit.min.js"></script>
+    <script>
+        jQuery(document).ready(function() {
+            if (jQuery(window).width() < 730) {
+                alert("Please put your phone horizontally to look at the agenda");
+            }
+        });
+        jQuery(window).resize(function() {
+            if (jQuery(window).width() < 730) {
+                alert("Please put your phone horizontally to look at the agenda");
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Roomba Website</title>
+    <style>
+        html,
+        body {
+            overflow-y: hidden;
+        }
+        
+        .timeline {
+            list-style-type: none;
+            display: flex;
+            align-items: none;
+            /*align-items: center;*/
+            justify-content: center;
+            padding-top: 8%;
+        }
+        
+        .li {
+            transition: all 200ms ease-in;
+        }
+        
+        .timestamp {
+            margin-bottom: 20px;
+            padding: 0px 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-weight: 100;
+        }
+        
+        .status {
+            padding: 0px 40px;
+            display: flex;
+            justify-content: center;
+            border-top: 2px solid #D6DCE0;
+            position: relative;
+            transition: all 200ms ease-in;
+        }
+        
+        .status h4 {
+            font-weight: 600;
+        }
+        
+        .status:before {
+            content: "";
+            width: 25px;
+            height: 25px;
+            background-color: white;
+            border-radius: 25px;
+            border: 1px solid #ddd;
+            position: absolute;
+            top: -15px;
+            left: 42%;
+            transition: all 200ms ease-in;
+        }
+        
+        .li.complete .status {
+            border-top: 2px solid #66DC71;
+        }
+        
+        .li.complete .status:before {
+            background-color: #66DC71;
+            border: none;
+            transition: all 200ms ease-in;
+        }
+        
+        .li.complete .status h4 {
+            color: #66DC71;
+        }
+        
+        @media (min-device-width: 320px) and (max-device-width: 700px) {
+            .timeline {
+                list-style-type: none;
+                display: block;
+            }
+            .li {
+                transition: all 200ms ease-in;
+                display: flex;
+                width: inherit;
+            }
+            .timestamp {
+                width: 100px;
+            }
+            .status:before {
+                left: -8%;
+                top: 30%;
+                transition: all 200ms ease-in;
+            }
+        }
+        
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            font-family: "Titillium Web", sans serif;
+            color: #758D96;
+        }
+        
+        button {
+            position: absolute;
+            width: 100px;
+            min-width: 100px;
+            padding: 20px;
+            margin: 20px;
+            font-family: "Titillium Web", sans serif;
+            border: none;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+        }
+        
+        #toggleButton {
+            position: absolute;
+            left: 50px;
+            top: 20px;
+            background-color: #75C7F6;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <ul class="timeline" id="timeline">
+        <li style="padding-left: 10%;" class="li complete">
+            <div class="timestamp">
+                <span class="author">Roomba Creator</span>
+                <span class="date">01/07/2020<span>
+    </div>
+    <div class="status">
+      <h4> Roomba Created </h4>
+    </div>
+  </li>
+  <li class="li complete">
+    <div class="timestamp">
+      <span class="author">Roomba Creator</span>
+                <span class="date">17/08/2020<span>
+    </div>
+    <div class="status">
+      <h4> Roomba Main Core Finished </h4>
+    </div>
+  </li>
+  <li class="li complete">
+    <div class="timestamp">
+      <span class="author">Roomba Creator</span>
+                <span class="date">1/09/2020<span>
+    </div>
+    <div class="status">
+      <h4> Roomba Music Core and Database Finished </h4>
+    </div>
+  </li>
+  <li class="li complete">
+    <div class="timestamp">
+      <span class="author">Roomba Creator</span>
+                <span class="date">TDB<span>
+    </div>
+    <div class="status">
+      <h4> Log System Finished </h4>
+    </div>
+  </li>
+  <li class="li complete">
+    <div class="timestamp">
+      <span class="author">Roomba Creator</span>
+                <span class="date">TBD<span>
+    </div>
+    <div class="status">
+      <h4> Dashboard Finished </h4>
+    </div>
+  </li>
+  <li class="li">
+    <div class="timestamp">
+      <span class="author">Roomba Creator</span>
+                <span class="date">TBD<span>
+    </div>
+    <div class="status">
+      <h4> Implement Discord Oauth </h4>
+    </div>
+  </li>
+  <li class="li">
+    <div class="timestamp">
+      <span class="author">Roomba Creator</span>
+                <span class="date">TBD<span>
+    </div>
+    <div class="status">
+      <h4> Deploy Roomba on OVH VPS </h4>
+    </div>
+  </li>
+ </ul>      
+
+ <script>
+    var completes = document.querySelectorAll(".complete");
+    var toggleButton = document.getElementById("toggleButton");
+
+
+    function toggleComplete() {
+        var lastComplete = completes[completes.length - 1];
+        lastComplete.classList.toggle('complete');
+    }
+
+    toggleButton.onclick = toggleComplete;
+</script>
+</body>
+
+</html>
