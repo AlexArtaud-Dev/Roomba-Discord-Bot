@@ -1,0 +1,4 @@
+/roomba-client/node_modules/
+/roomba-backend/node_modules/
+/roomba-backend/config.js
+/roomba-backend/package-lock (2).json
